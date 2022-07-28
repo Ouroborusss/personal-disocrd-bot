@@ -16,9 +16,9 @@ intents.members = True
 
 client = commands.Bot(command_prefix="-", intents=intents)
 
-discord.opus.load_opus()
-if not discord.opus.is_loaded():
-    print("runtime error")
+#discord.opus.load_opus(name='opus')
+#if not discord.opus.is_loaded():
+#    print("runtime error")
 
 @client.event
 async def on_member_join(member):
