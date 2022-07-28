@@ -1,5 +1,4 @@
 discord.py
 python-dotenv
 youtube_dl
-urllib
 asyncio
