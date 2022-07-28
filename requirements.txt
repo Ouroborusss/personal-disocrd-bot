@@ -2,5 +2,5 @@ discord.py
 python-dotenv
 youtube_dl
 asyncio
-ffmpeg
+ffmpeg-python
 pynacl
