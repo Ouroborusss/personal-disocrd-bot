@@ -9,7 +9,7 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 AUTO_ROLE = 'Basic-Bitch'
-ENTER_CHANNEL = 978748432661504002
+ENTER_CHANNEL = 808525066899423242
 
 intents = discord.Intents.default()
 intents.members = True

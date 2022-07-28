@@ -2,14 +2,14 @@ from discord.utils import get
 from discord import FFmpegPCMAudio
 from youtube_dl import YoutubeDL
 import youtube_dl
-from pydoc import cli
+#from pydoc import cli
 import discord
 from discord.ext import commands
 import asyncio
 import urllib.request
 import re
 
-MUSIC_CHANNEL = 979804135698341908
+MUSIC_CHANNEL = 808526388381745202
 
 NO_AUDIO_ON_RESUME_MESSAGE = 'Nothing in queue to resume.'
 AUDIO_RESUME = 'Audio has been resumed.'
