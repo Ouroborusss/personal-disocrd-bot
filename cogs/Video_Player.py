@@ -96,7 +96,7 @@ class Music_Bot(commands.Cog):
             print("Origional Wording: " + searchterm.replace(" ","-"))
             html = urllib.request.urlopen("https://www.youtube.com/results?search_query=" + str(searchterm.replace(" ","-")))
             video_ids = re.findall(r"watch\?v=(\S{11})", html.read().decode())
-            url = 'https://www.youtube.com/watch?v='+ video_ids[0] + '&bpctr=9999999999&has_verified=1'
+            url = 'https://www.youtube.com/watch?v='+ video_ids[0]
             print("Final Link" + 'https://www.youtube.com/watch?v=' + video_ids[0])
         
         #checks if voice is not connects if no then connect
