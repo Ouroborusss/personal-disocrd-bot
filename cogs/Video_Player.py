@@ -1,13 +1,15 @@
 from discord.utils import get
 from discord import FFmpegPCMAudio
-from youtube_dl import YoutubeDL
-import youtube_dl
+#from youtube_dl import YoutubeDL
+from yt_dlp import YoutubeDL
 #from pydoc import cli
 import discord
 from discord.ext import commands
 import asyncio
 import urllib.request
 import re
+
+import yt_dlp
 
 MUSIC_CHANNEL = 808526388381745202
 
@@ -43,7 +45,8 @@ AFK_TIMEOUT = AFK_TIMEOUT_IN_MINUTES * 12
 queue = []
 
 def is_supported(url):
-    extractors = youtube_dl.extractor.gen_extractors()
+    #extractors = youtube_dl.extractor.gen_extractors()
+    extractors = yt_dlp.extractor.gen_extractors()
     for e in extractors:
         if e.suitable(url) and e.IE_NAME != 'generic':
             return True
